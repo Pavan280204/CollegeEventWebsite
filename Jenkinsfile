@@ -15,10 +15,13 @@ pipeline {
         }
 
         stage('Start Minikube') {
-            steps {
-                bat 'minikube start'
-            }
-        }
+    steps {
+        bat 'whoami'
+        bat 'echo %USERPROFILE%'
+        bat 'dir C:\\Users\\nukal\\.minikube'
+        bat 'minikube profile list'
+    }
+}
 
         stage('Load Image into Minikube') {
             steps {
