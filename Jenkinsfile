@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/Pavan280204/CollegeEventWebsite.git'
+                git branch: 'main', url: 'https://github.com/Pavan280204/CollegeEventWebsite.git'
             }
         }
 
